@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 package net.luminis.data;
-
+//een comment
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.RequestScoped;
 import javax.enterprise.event.Observes;
