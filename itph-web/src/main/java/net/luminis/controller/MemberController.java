@@ -41,6 +41,12 @@ public class MemberController {
     private MemberRegistration memberRegistration;
 
     private Member newMember;
+    
+    /* constructor is hier overbodig
+    MemberController() {
+    	this.memberRegistration = new MemberRegistration();
+    }
+    */
 
     @Produces
     @Named

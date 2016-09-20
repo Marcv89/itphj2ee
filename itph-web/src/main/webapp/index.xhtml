@@ -32,7 +32,7 @@
       <h:form id="reg">
          <h2>Member Registration</h2>
          <p>Enforces annotation-based constraints defined on the model class.</p>
-         <h:panelGrid columns="3" columnClasses="titleCell">
+         <h:panelGrid columns="4" columnClasses="titleCell">
             <h:outputLabel for="name" value="Name:"/>
             <h:inputText id="name" value="#{newMember.name}" />
             <h:message for="name" errorClass="invalid"/>
@@ -44,6 +44,10 @@
             <h:outputLabel for="phoneNumber" value="Phone #:"/>
             <h:inputText id="phoneNumber" value="#{newMember.phoneNumber}"/>
             <h:message for="phoneNumber" errorClass="invalid"/>
+            
+            <h:outputLabel for="huisdier" value="Huisdier:"/>
+            <h:inputText id="huisdier" value="#{newMember.huisdier}"/>
+            <h:message for="huisdier" errorClass="invalid"/>
          </h:panelGrid>
 
          <p>
@@ -74,6 +78,10 @@
          <h:column>
             <f:facet name="header">Phone #</f:facet>
                 #{_member.phoneNumber}
+            </h:column>
+            <h:column>
+            <f:facet name="header">Huisdier</f:facet>
+                #{_member.huisdier}
             </h:column>
          <h:column>
             <f:facet name="header">REST URL</f:facet>
